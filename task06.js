@@ -1,11 +1,21 @@
 function findMaximum (num1,num2,num3){
-    if (num1 >= num2 & num1 >= num3){
-        return num1;
-    } else if( num2 >= num1 & num2 >= num3){
-        return num2;
-    }else if (num3 >= num1 & num3 >= num2){
-        return num3;
+    var max=0;
+    if (num1 >= num2 ){
+        max = num1;
+    } else {
+        max = num2;
+    }if (max >= num3){
+        return max;
     } else{
-        return "Please make sure all entries are numbers."
+        return num3;
     }
+}
+function findMaximum(...num){
+    var max = 0;
+    for ( i=0; i <= num.length; i ++) {
+        if (num[i] >= max) {
+            max = num [i];
+        }
+    }
+    return max;
 }

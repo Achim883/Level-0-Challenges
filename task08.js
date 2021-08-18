@@ -10,6 +10,6 @@ function convertNumberToTime(num) {
     } else  if ( hours > 1 & minutes < 2){
         return hours + " hours, " + minutes + " minute.";
     }else {
-        return hours + " hour, " + minutes + " minute.";
+        return hours + " hours, " + minutes + " minutes.";
     }
 }
