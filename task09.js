@@ -20,6 +20,5 @@ function searchVowels(string){
             } 
         } 
     } 
-    return "Vowels :" + vowelsArray;
+    console.log ("Vowels :" + vowelsArray);
 }
-searchVowels("Annette");
