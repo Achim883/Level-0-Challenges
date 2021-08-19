@@ -14,6 +14,5 @@ function findCommonLetters(string1,string2){
             }
         }
     }
-    return "Common Letters:" + commonLetters;
+    console.log("Common Letters:" + commonLetters);
 }
-findCommonLetters ("house", "computers");
