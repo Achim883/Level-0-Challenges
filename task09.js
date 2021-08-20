@@ -1,12 +1,12 @@
 function searchVowels(string){
     var vowelsArray = [];
-    var x = {};
+    var frequency = {};
     for ( i = 0 ; i <= (string.length -1); i++){
-        var y = string[i];
-        if (x[y]){
-            x[y]++;
+        var vowels = string[i];
+        if (frequency[vowels]){
+            frequency[vowels]++;
         } else {
-            x[y]=1;
+            frequency[vowels]=1;
             if (string[i] == "a" || string[i] == "A"){
                 vowelsArray.push(" a");
             } else if ( string[i] == "e" || string[i] == "E"){
@@ -19,6 +19,11 @@ function searchVowels(string){
                 vowelsArray.push(" u");
             } 
         } 
+        for (j=1; j <= vowelsArray.length; j++){
+            if (vowelsArray[0] == vowelsArray[j]){
+                vowelsArray.shift();
+            }  
+        }
     } 
-    console.log ("Vowels :" + vowelsArray);
+    console.log ("Vowels :" + vowelsArray );
 }
